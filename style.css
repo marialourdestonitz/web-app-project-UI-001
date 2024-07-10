@@ -432,16 +432,26 @@ h1,h2,h3,h4 {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    object-position: top;
 }
 
-.slider .title-info {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
+.slider .title-info .wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 5vw;
+    max-width: 600px;
+    margin: auto;
 }
 
-
+.slider .title-info span {
+    font-size: 30px;
+    color: var(--primary-color-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 
 /*--SUBMENU--*/
@@ -675,6 +685,8 @@ form.search :where(i:last-child) {
     display: block;
 }
 
+
+
 @media (min-width:992px) {
     .menu-trigger {
         display: none;
@@ -728,7 +740,17 @@ form.search :where(i:last-child) {
     .nav.menu .sub-menu li {
         padding: 5px 30px;
     }
-}
+
+    .slider .image-cover {
+        height: calc(100vh - 80px);
+    }
+
+    .slider .title-info {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
 
 @media (min-width:1200px) {
     .container .wide {
