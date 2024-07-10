@@ -9,6 +9,10 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <div id="page" class="page-home">
@@ -345,9 +349,9 @@
       </header>
       <main>
         <section class="slider">
-          <div class="slider-container">
-            <div class="wrap">
-              <div class="item">
+          <div class="sliderbox swiper">
+            <div class="wrap swiper-wrapper">
+              <div class="item swiper-slide">
                 <div class="hero-image">
                   <div class="image-cover">
                     <img src="assests/banner.png" alt="" />
@@ -355,9 +359,9 @@
                   <div class="title-info">
                     <div class="container wide">
                       <div class="wrap">
-                        <span> Hot Promotions </span>
-                        <h1>Trending Fashion</h1>
-                        <h2 class="home__title-second">Features Collection</h2>
+                        <span class="title-sub"> Hot Promotions </span>
+                        <h1 class="title-first">Trending Fashion</h1>
+                        <h2 class="title-second">Features Collection</h2>
                         <div class="button">
                           <a href="" class="primary-btn">Shop Now</a>
                         </div>
@@ -366,6 +370,47 @@
                   </div>
                 </div>
               </div>
+              <div class="item swiper-slide">
+                <div class="hero-image">
+                  <div class="image-cover">
+                    <img src="assests/banner.png" alt="" />
+                  </div>
+                  <div class="title-info">
+                    <div class="container wide">
+                      <div class="wrap">
+                        <span class="title-sub"> Hot Promotions </span>
+                        <h1 class="title-first">Trending Fashion</h1>
+                        <h2 class="title-second">Features Collection</h2>
+                        <div class="button">
+                          <a href="" class="primary-btn">Shop Now</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item swiper-slide">
+                <div class="hero-image">
+                  <div class="image-cover">
+                    <img src="assests/style.png" alt="" />
+                  </div>
+                  <div class="title-info">
+                    <div class="container wide">
+                      <div class="wrap">
+                        <span class="title-sub"> Hot Promotions </span>
+                        <h1 class="title-first">Trending Fashion</h1>
+                        <h2 class="title-second">Features Collection</h2>
+                        <div class="button">
+                          <a href="" class="primary-btn">Shop Now</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="custom-pagination">
+              <div class="swiper-pagination"></div>
             </div>
           </div>
         </section>
@@ -417,6 +462,7 @@
         </div>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

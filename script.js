@@ -29,3 +29,21 @@ submenu.forEach((menu) => menu.addEventListener('click', function (e) {
 }));
 
 
+/*--SLIDER--*/
+
+const swiper = new Swiper('.sliderbox', {
+    loop: true,
+    effect: 'fade',
+    autoHeight: true,
+    slidesPerView: "auto",
+    spaceBetween: 30,
+
+
+    // If we need pagination
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+});
+
+
