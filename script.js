@@ -36,7 +36,7 @@ const swiper = new Swiper('.sliderbox', {
     effect: 'fade',
     autoHeight: true,
     slidesPerView: "auto",
-    spaceBetween: 30,
+    spaceBetween: 20,
 
 
     // If we need pagination
