@@ -47,3 +47,76 @@ const swiper = new Swiper('.sliderbox', {
 });
 
 
+/*--CAROUSEL--*/
+
+const carousel = new Swiper('.carouselbox', {
+    slidesPerView: "auto",
+    spaceBetween: 30,
+    centeredSlides: true,
+
+
+    // If we need pagination
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+        481: {
+            slidesPerView: 2,
+            slidesPerGroup: 1,
+            centeredSlides: false,
+        },
+        640: {
+            slidesPerView: 3,
+            slidesPerGroup: 3,
+            centeredSlides: false,
+        },
+        992: {
+            slidesPerView: 2,
+            slidesPerGroup: 1,
+            centeredSlides: false,
+        }
+    }
+});
+
+//*--SORTER--*//
+
+const sorter = document.querySelector('.sort-list');
+if (sorter) {
+    const sortLi = sorter.querySelectorAll('li');
+    sorter.querySelector('.opt-trigger').addEventListener('click', function () {
+        sorter.querySelector('ul').classList.toggle('show');
+    });
+
+    sortLi.forEach((item) => item.addEventListener('click', function () {
+        sortLi.forEach((li) => li != this ? li.classList.remove('active') : null);
+
+        this.classList.add('active');
+        sorter.querySelector('.opt-trigger span.value').textContent = this.textContent;
+        sorter.querySelector('ul').classList.toggle('show');
+    }));
+};
+
+//*--TABBED--*//
+
+const trigger = document.querySelectorAll('.tabbed-trigger'),
+    content = document.querySelectorAll('.tabbed > div');
+
+trigger.forEach((btn) => {
+    btn.addEventListener('click', function () {
+        let dataTarget = this.dataset.id,
+            body = document.querySelector(`#${dataTarget}`);
+
+        // Remove 'active' class from all triggers and contents
+        trigger.forEach((b) => b.parentNode.classList.remove('active'));
+        content.forEach((s) => c.classList.remove('active'));
+
+        // Add 'active' class to the clicked trigger and its corresponding content
+        this.parentNode.classList.add('active');
+        body.classList.add('active');
+    });
+});
+
+
+
+
