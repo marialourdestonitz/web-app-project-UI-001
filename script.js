@@ -109,13 +109,38 @@ trigger.forEach((btn) => {
 
         // Remove 'active' class from all triggers and contents
         trigger.forEach((b) => b.parentNode.classList.remove('active'));
-        content.forEach((s) => c.classList.remove('active'));
+        content.forEach((s) => s.classList.remove('active'));
 
         // Add 'active' class to the clicked trigger and its corresponding content
         this.parentNode.classList.add('active');
         body.classList.add('active');
     });
 });
+
+
+//*--PRODUCT IMAGE--*//
+const thumbImage = new Swiper('.thumbnail-image', {
+    direction: 'vertical',
+    spaceBetween: 15,
+    slidesPerView: 1,
+    freeMode: true,
+    watchSlidesProgress: true,
+});
+
+const mainImage = new Swiper('.main-image', {
+    loop: true,
+    autoHeight: true,
+
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    thumbs: {
+        swiper: thumbImage,
+    },
+});
+
+
 
 
 
