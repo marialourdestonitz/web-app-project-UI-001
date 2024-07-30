@@ -187,6 +187,8 @@ h4 {
 }
 
 
+
+
 /*__Group Selector__*/
 
 .item-floating, .header-center .branding {
@@ -388,7 +390,14 @@ h4 {
     --grid-col:175px;
     grid-template-columns: repeat(auto-fit, minmax(min(var(--grid-col), 100%), 1fr));
     gap: var(--gutter, 30px);
+
 }
+
+.dotgrid  .item {
+    padding: 24px;
+    box-shadow: var(--shadow);
+}
+
 
 .dotgrid .dot-image {
     position: relative;
@@ -446,12 +455,12 @@ h4 {
 
 .dotgrid .actions ul li a,
 .dotgrid .dot-image .label span {
-    font-size: 20px;
+    font-size: 14px;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 42px;
-    height: 42px;
+    width: 28px;
+    height: 28px;
     background-color: var(--border-color);
     border-radius: 50%;
     transition: var(--transition-background), var(--transition-color);
@@ -477,8 +486,18 @@ h4 {
     text-align: center;
 }
 
+.dotgrid .dot-detail {
+    display: flex;
+}
+
+
 .dotgrid .product-price .before {
+    font-size: 14px;
     text-decoration: line-through;
+}
+
+ .dot-detail .product-star i {
+    font-size: 14px;
 }
 
 
@@ -839,9 +858,12 @@ main > section .heading {
     gap: unset;
 }
 
+
+
 .carousel .nav > div::after {
     content: none;
 }
+
 
 .carousel .nav > div {
     width: 40px;
@@ -1068,7 +1090,8 @@ main > section .heading {
     border: 2px solid var(--primary-color);
 }
 
-.inner-footer .bottom {
+.inner-footer .bottom,
+.page-single .carousel{
     padding-top: 40px;
     padding-bottom: 40px;
 }
@@ -1479,6 +1502,11 @@ main > section .heading {
     padding: 50px 0;
     max-width: 980px;
     margin: 0 auto;
+    display: none;
+}
+
+.product .product-about.active {
+    display: block;
 }
 
 .product .product-about .text-block {
