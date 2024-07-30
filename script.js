@@ -119,26 +119,49 @@ trigger.forEach((btn) => {
 
 
 //*--PRODUCT IMAGE--*//
-const thumbImage = new Swiper('.thumbnail-image', {
-    direction: 'vertical',
-    spaceBetween: 15,
-    slidesPerView: 1,
-    freeMode: true,
-    watchSlidesProgress: true,
+// const thumbImage = new Swiper('.thumbnail-image', {
+//     direction: 'vertical',
+//     spaceBetween: 15,
+//     slidesPerView: 1,
+//     freeMode: true,
+//     watchSlidesProgress: true,
+// });
+
+// const mainImage = new Swiper('.main-image', {
+//     loop: true,
+//     autoHeight: true,
+
+//     pagination: {
+//         el: '.swiper-pagination',
+//         clickable: true,
+//     },
+//     thumbs: {
+//         swiper: thumbImage,
+//     },
+// });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const thumbImage = new Swiper('.thumbnail-image', {
+        direction: 'vertical',
+        spaceBetween: 15,
+        slidesPerView: 1,
+        freeMode: true,
+        watchSlidesProgress: true,
+    });
+
+    const mainImage = new Swiper('.main-image', {
+        loop: true,
+        autoHeight: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        thumbs: {
+            swiper: thumbImage,
+        },
+    });
 });
 
-const mainImage = new Swiper('.main-image', {
-    loop: true,
-    autoHeight: true,
-
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
-    thumbs: {
-        swiper: thumbImage,
-    },
-});
 
 
 
