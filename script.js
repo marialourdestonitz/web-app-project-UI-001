@@ -1,3 +1,4 @@
+
 const triggerOpen = document.querySelectorAll('[trigger-button]');
 const triggerClose = document.querySelectorAll('[close-button]');
 const overlay = document.querySelector('[data-overlay]');
@@ -161,10 +162,3 @@ document.addEventListener('DOMContentLoaded', () => {
         },
     });
 });
-
-
-
-
-
-
-

@@ -313,7 +313,7 @@
                       ></a>
                     </li>
                     <li>
-                      <a href="#0"
+                      <a href="#0" trigger-button data-target="data-cart"
                         ><span class="item-floating">0</span
                         ><i class="ri-shopping-bag-line"></i
                       ></a>
@@ -488,13 +488,16 @@
                             >
                           </li>
                           <li>
-                            <a href=""
+                            <a href="#0" trigger-button data-target="data-share"
                               ><i class="ri-share-forward-line"></i
                               ><span>Share</span></a
                             >
                           </li>
                           <li>
-                            <a href=""
+                            <a
+                              href="#0"
+                              trigger-button
+                              data-target="data-question"
                               ><i class="ri-question-line"></i
                               ><span>Ask Question?</span></a
                             >
@@ -522,8 +525,8 @@
                 </div>
               </div>
               <div class="product detail">
-                <div class="wrapper tabbed">
-                  <nav class="list-inline scroltto">
+                <div class="tabbed">
+                  <nav class="list-inline scrollto">
                     <ul>
                       <li class="active">
                         <a
@@ -629,7 +632,13 @@
                           <span>3 review</span>
                         </div>
                         <div class="button">
-                          <a href="" class="primary-btn">Write a review</a>
+                          <a
+                            href="#0"
+                            class="primary-btn"
+                            trigger-button
+                            data-target="data-review"
+                            >Write a review</a
+                          >
                         </div>
                       </div>
                       <div class="body-review">
@@ -732,10 +741,8 @@
             </div>
           </div>
         </div>
-
         <!--CAROUSEL-->
-
-        <div class="carousel">
+        <section class="carousel">
           <div class="container">
             <div class="wrap">
               <div class="heading">
@@ -889,7 +896,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </section>
       </main>
       <footer>
         <div class="inner-footer">
@@ -1012,6 +1019,359 @@
           <div class="button">
             <a href="" class="secondary-btn">Login</a>
             <a href="" class="primary-btn">Register</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--POP-UP-->
+    <div id="data-share" class="data-popup d-share">
+      <div class="wrap">
+        <div class="data-content">
+          <a href="" class="close-trigger" close-button
+            ><i class="ri-close-line"></i
+          ></a>
+          <div class="form">
+            <label>Copy Link</label>
+            <input type="text" disabled value="youtube.com" />
+            <span><i class="ri-file-copy-line"></i></span>
+          </div>
+          <div class="media-share list-inline">
+            <label>Share Link</label>
+            <ul>
+              <li>
+                <a href="#"><i class="ri-facebook-line"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="ri-instagram-line"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="ri-pinterest-line"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="ri-whatsapp-line"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="data-question" class="data-popup d-question">
+      <div class="wrap">
+        <div class="data-content">
+          <a href="" class="close-trigger" close-button
+            ><i class="ri-close-line"></i
+          ></a>
+          <h3>Any Question?</h3>
+          <form action="">
+            <div><input type="text" placeholder="Name" /></div>
+            <div><input type="text" placeholder="Email" /></div>
+            <div>
+              <textarea
+                placeholder="Please write your Question...."
+                name=""
+                cols="30"
+                rows="10"
+                id=""
+              ></textarea>
+            </div>
+            <div class="button">
+              <button type="submit" class="secondary-btn">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div id="data-review" class="data-popup d-review">
+      <div class="wrap">
+        <div class="data-content">
+          <a href="#0" class="close-trigger" close-button
+            ><i class="ri-close-line"></i
+          ></a>
+          <h3>Write a Review</h3>
+          <form action="">
+            <div class="dotgrid">
+              <div class="wrapper">
+                <div><input type="text" placeholder="Name" /></div>
+                <div><input type="text" placeholder="Email" /></div>
+              </div>
+            </div>
+            <div class="ratings">
+              <span>Your Rating:</span>
+              <div class="stars">
+                <input type="radio" name="rating" id="star5" />
+                <label for="star5"><i class="ri-star-fill"></i></label>
+                <input type="radio" name="rating" id="star4" />
+                <label for="star4"><i class="ri-star-fill"></i></label>
+                <input type="radio" name="rating" id="star3" />
+                <label for="star3"><i class="ri-star-fill"></i></label>
+                <input type="radio" name="rating" id="star2" />
+                <label for="star2"><i class="ri-star-fill"></i></label>
+                <input type="radio" name="rating" id="star1" />
+                <label for="star1"><i class="ri-star-fill"></i></label>
+              </div>
+            </div>
+            <div><input type="text" placeholder="Email" /></div>
+            <div>
+              <textarea
+                placeholder="Please write your Review...."
+                name=""
+                cols="30"
+                rows="10"
+                id=""
+              ></textarea>
+            </div>
+            <div class="button">
+              <button type="submit" class="secondary-btn">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div id="data-cart" class="cart-menu">
+      <div class="wrap scrollto">
+        <a href="#0" class="close-trigger" close-button
+          ><i class="ri-close-line"></i
+        ></a>
+        <div class="scrollto cart-outer">
+          <div class="wrapper">
+            <div class="cart-list">
+              <div class="wrapper">
+                <div class="cart-header">
+                  <h3>Shopping Cart</h3>
+                </div>
+                <div class="cart-body scrollto">
+                  <div class="product-list scrollto">
+                    <div class="wrapper">
+                      <ul>
+                        <li>
+                          <div class="grouping">
+                            <div class="quantity">
+                              <div class="control">
+                                <button>-</button>
+                                <input type="text" value="1" />
+                                <button>+</button>
+                              </div>
+                            </div>
+                            <div class="thumbnail">
+                              <a href="">
+                                <img src="assests/shirt.png" alt="" />
+                              </a>
+                            </div>
+                          </div>
+                          <div class="variants">
+                            <h4 class="dot-title">
+                              <a href="">Printed Black Shirt</a>
+                            </h4>
+                            <div class="color grey-color">
+                              <span>Color:</span>
+                              <span>Black:</span>
+                            </div>
+                            <div class="size grey-color">
+                              <span>Size:</span>
+                              <span>M</span>
+                            </div>
+                            <div class="price">€12,00</div>
+                            <a href="" class="item-remove">
+                              <i class="ri-delete-bin-line"></i>
+                            </a>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="grouping">
+                            <div class="quantity">
+                              <div class="control">
+                                <button>-</button>
+                                <input type="text" value="1" />
+                                <button>+</button>
+                              </div>
+                            </div>
+                            <div class="thumbnail">
+                              <a href="">
+                                <img src="assests/shirt.png" alt="" />
+                              </a>
+                            </div>
+                          </div>
+                          <div class="variants">
+                            <h4 class="dot-title">
+                              <a href="">Printed Black Shirt</a>
+                            </h4>
+                            <div class="color grey-color">
+                              <span>Color:</span>
+                              <span>Black:</span>
+                            </div>
+                            <div class="size grey-color">
+                              <span>Size:</span>
+                              <span>M</span>
+                            </div>
+                            <div class="price">€12,00</div>
+                            <a href="" class="item-remove">
+                              <i class="ri-delete-bin-line"></i>
+                            </a>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="grouping">
+                            <div class="quantity">
+                              <div class="control">
+                                <button>-</button>
+                                <input type="text" value="1" />
+                                <button>+</button>
+                              </div>
+                            </div>
+                            <div class="thumbnail">
+                              <a href="">
+                                <img src="assests/shirt.png" alt="" />
+                              </a>
+                            </div>
+                          </div>
+                          <div class="variants">
+                            <h4 class="dot-title">
+                              <a href="">Printed Black Shirt</a>
+                            </h4>
+                            <div class="color grey-color">
+                              <span>Color:</span>
+                              <span>Black:</span>
+                            </div>
+                            <div class="size grey-color">
+                              <span>Size:</span>
+                              <span>M</span>
+                            </div>
+                            <div class="price">€12,00</div>
+                            <a href="" class="item-remove">
+                              <i class="ri-delete-bin-line"></i>
+                            </a>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="grouping">
+                            <div class="quantity">
+                              <div class="control">
+                                <button>-</button>
+                                <input type="text" value="1" />
+                                <button>+</button>
+                              </div>
+                            </div>
+                            <div class="thumbnail">
+                              <a href="">
+                                <img src="assests/shirt.png" alt="" />
+                              </a>
+                            </div>
+                          </div>
+                          <div class="variants">
+                            <h4 class="dot-title">
+                              <a href="">Printed Black Shirt</a>
+                            </h4>
+                            <div class="color grey-color">
+                              <span>Color:</span>
+                              <span>Black:</span>
+                            </div>
+                            <div class="size grey-color">
+                              <span>Size:</span>
+                              <span>M</span>
+                            </div>
+                            <div class="price">€12,00</div>
+                            <a href="" class="item-remove">
+                              <i class="ri-delete-bin-line"></i>
+                            </a>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="grouping">
+                            <div class="quantity">
+                              <div class="control">
+                                <button>-</button>
+                                <input type="text" value="1" />
+                                <button>+</button>
+                              </div>
+                            </div>
+                            <div class="thumbnail">
+                              <a href="">
+                                <img src="assests/shirt.png" alt="" />
+                              </a>
+                            </div>
+                          </div>
+                          <div class="variants">
+                            <h4 class="dot-title">
+                              <a href="">Printed Black Shirt</a>
+                            </h4>
+                            <div class="color grey-color">
+                              <span>Color:</span>
+                              <span>Black:</span>
+                            </div>
+                            <div class="size grey-color">
+                              <span>Size:</span>
+                              <span>M</span>
+                            </div>
+                            <div class="price">€12,00</div>
+                            <a href="" class="item-remove">
+                              <i class="ri-delete-bin-line"></i>
+                            </a>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="cart-footer">
+                  <div class="discount">
+                    <form action="">
+                      <input type="text" class="input" placeholder="Coupon" />
+                      <input type="submit" class="submit" value="Apply" />
+                    </form>
+                  </div>
+                  <div class="math-pricing">
+                    <ul>
+                      <li>
+                        <span>Subtotal</span>
+                        <span class="value"></span>
+                      </li>
+                      <ul>
+                        <li>
+                          <span>Shipping</span>
+                        </li>
+                        <li>
+                          <div>
+                            <input
+                              type="radio"
+                              class="checker"
+                              name="shipping"
+                            />
+                            <label for="">Free</label>
+                          </div>
+                          <span class="value">€0,00</span>
+                        </li>
+                        <li>
+                          <div>
+                            <input
+                              type="radio"
+                              class="checker"
+                              name="shipping"
+                            />
+                            <label for="">Flat</label>
+                          </div>
+                          <span class="value">€105,00</span>
+                        </li>
+                      </ul>
+                      <li>
+                        <span>Promo Discount</span>
+                        <span class="value">-€10,00</span>
+                      </li>
+                      <li class="total">
+                        <span>Total</span>
+                        <span class="value">€90,00</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="button">
+                    <a href="" class="secondary-btn">Checkout</a>
+                    <a href="" class="grey-link">View Cart</a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
