@@ -144,7 +144,7 @@ trigger.forEach((btn) => {
 document.addEventListener('DOMContentLoaded', () => {
     const thumbImage = new Swiper('.thumbnail-image', {
         direction: 'vertical',
-        spaceBetween: 15,
+        spaceBetween: 10,
         slidesPerView: 1,
         freeMode: true,
         watchSlidesProgress: true,
